@@ -20,18 +20,18 @@ function duplicateElement(arr){
     return resArray
 }
 /// optimal
-// function duplicateElement(arr){
-//     let resArray=[];
-//     arr.sort((a,b)=>a-b)
-//     for(let i=0;i<arr.length;i++){
-//                  if( arr[i] !==arr[i+1]){
-//                     resArray.push(arr[i])
-//                  }
+function duplicateElement(arr){
+    let resArray=[];
+    arr.sort((a,b)=>a-b)
+    for(let i=0;i<arr.length;i++){
+                 if( arr[i] !==arr[i+1]){
+                    resArray.push(arr[i])
+                 }
 
-//               }
+              }
 
-//     return resArray
-// }
+    return resArray
+}
 /// most optimal
 function duplicateElement(arr){
     let resArray=[];
