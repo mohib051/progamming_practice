@@ -7,6 +7,7 @@ function repeatElement(arr){
         if( arr[i] !== arr[i+1] ){
              if(cu>50){
                 resArray.push(arr[i])
+                
              }
 
             cu=50
