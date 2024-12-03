@@ -117,13 +117,54 @@
 
 
 // ************ (FUNCTIONAL WAY) || (RECURSIVE WAY) **********
-let n =3;
-function sum(n){
-      if(n<1){
-        // console.log(`sum of ${n} till 1 is ${s}`)
-        return 0 ;
-      }
-     return (n + sum(n-1));
-  }
-  var ans = sum(n)
-console.log(`sum of n to 1 is ${ans}`);
+// let n =3;
+// function sum(n){
+//       if(n<1){
+//         // console.log(`sum of ${n} till 1 is ${s}`)
+//         return 0 ;
+//       }
+//      return (n + sum(n-1));
+//   }
+//   var ans = sum(n)
+// console.log(`sum of n to 1 is ${ans}`);
+
+
+
+// *****************----reverse an array using (two pointer apporoach)*****
+// let n=5;
+// let arr = [10,20,30,40,50];
+// function reverse(arr,l,r){
+//     if(l>=r){
+//       return;
+//     }
+    // swap function is directly written here,as In JavaScript, when you pass variables (like a and b) to a function, they are passed by value, not by reference. This means that changes inside the swap() function do not affect the original array elements.
+    
+//     let temp = arr[l];
+//     arr[l] = arr[r];
+//     arr[r] = temp;
+
+//     reverse(arr, l+1 , r-1)
+// }
+// reverse(arr,0,n-1)
+// console.log(arr);
+
+// When you call swap(arr[l], arr[r]), the values of arr[l] and arr[r] are copied into a and b. Any changes to a and b inside the swap function don't affect the original array because JavaScript uses pass-by-value for primitive data types.
+
+
+//-------------- reverse an array (using single variable , one pointer approach )--------
+// let n =5 ;
+// let arr = [10,35,550,40,335];
+// let i =0 ;
+// function reverseArray(arr,n,i){
+//     if(i>=n/2){
+//       return;
+//     }
+//     // swap[arr[i], arr[n-1-i]]
+//     let temp = arr[i];
+//     arr[i]= arr[n-1-i];
+//     arr[n-1-i]=temp;
+//     reverseArray(arr,n,i+1)
+// }
+
+// reverseArray(arr,n, i);
+// console.log(arr)
