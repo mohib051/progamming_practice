@@ -130,7 +130,7 @@
 
 
 
-// *****************----reverse an array using (two pointer apporoach)*****
+// *****************Q.8----reverse an array using (two pointer apporoach)*****
 // let n=5;
 // let arr = [10,20,30,40,50];
 // function reverse(arr,l,r){
@@ -168,3 +168,42 @@
 
 // reverseArray(arr,n, i);
 // console.log(arr)
+
+// ----------------Q.9*********--check if a string is palindrome or not---*****
+// let str = "madas";
+// function ispalin(str, i) {
+//     if (i >= str.length / 2) {  
+//         console.log("Palindrome");
+//         return;  // Stop further recursion
+//     }
+//     if (str[i] !== str[str.length - 1 - i]) {
+//         console.log("Not a palindrome");
+//         return;  // Stop recursion after detecting a mismatch
+//     }
+//     ispalin(str, i + 1);  // Recursive call to check the next pair
+// }
+// ispalin(str, 0);  // Start the function
+
+// -------Another way for printing  ------
+
+// let str = "mom";
+// function ispalin(str, i) {
+//     if (i >= str.length / 2) {  
+//         return true ;  // Stop further recursion
+//     }
+
+//     if (str[i] !== str[str.length - 1 - i]) {
+//         return false;  // Stop recursion after detecting a mismatch
+//     }
+
+//    return ispalin(str, i + 1);  // Recursive call to check the next pair
+// }
+// var ans = ispalin(str, 0);  // Start the function
+
+// if(ans  === true){
+//   console.log("palindrome no")
+// }
+// else{
+//   console.log("not palindrome")
+// }
+
