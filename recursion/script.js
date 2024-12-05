@@ -217,3 +217,23 @@
 //   return last +slast ;
 // }
 // console.log(fibo(7));
+
+
+// ------find the occurance of a number in an array --- (using for loop)
+
+let arr = [1,2,1,3,2,1,23,4,1]
+let n=4;
+function occurance( n ,arr )
+{ 
+    let count = 0;
+    for(let i=0 ; i<arr.length ; i++){
+        if(arr[i] === n){
+          count++;
+        }
+    }
+    return count ;
+
+}
+
+let ans = occurance(n ,arr )
+console.log(` number ${n } is present in array ${ans} times`)
