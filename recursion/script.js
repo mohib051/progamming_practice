@@ -221,19 +221,67 @@
 
 // ------find the occurance of a number in an array --- (using for loop)
 
-let arr = [1,2,1,3,2,1,23,4,1]
-let n=4;
-function occurance( n ,arr )
-{ 
-    let count = 0;
-    for(let i=0 ; i<arr.length ; i++){
-        if(arr[i] === n){
-          count++;
-        }
-    }
-    return count ;
+// let arr = [1,2,1,3,2,1,23,4,1]
+// let n=4;
+// function occurance( n ,arr )
+// { 
+//     let count = 0;
+//     for(let i=0 ; i<arr.length ; i++){
+//         if(arr[i] === n){
+//           count++;
+//         }
+//     }
+//     return count ;
 
-}
+// }
 
-let ans = occurance(n ,arr )
-console.log(` number ${n } is present in array ${ans} times`)
+// let ans = occurance(n ,arr )
+// console.log(` number ${n } is present in array ${ans} times`)
+
+
+
+// Sample input data
+
+
+// let n = parseInt(prompt("Enter the number of elements in the array:"));
+
+// Collect array elements
+// let arr = [];
+// for (let i = 0; i < n; i++) {
+//   let num = parseInt(prompt(`Enter element ${i + 1}:`));
+//   arr.push(num);
+// }
+
+// // Create a hashmap to store occurrences
+// let hash = {};  // Equivalent to int hash[13] in C++
+// for (let i = 0; i < n; i++) {
+//   let currentNumber = arr[i];
+//   hash[currentNumber] = (hash[currentNumber] || 0) + 1;
+// }
+
+// // Querying the hashmap
+// let q = parseInt(prompt("Enter the number of queries:"));
+// for (let i = 0; i < q; i++) {
+//   let number = parseInt(prompt("Enter the number to query:"));
+//   // Fetch the count from the hashmap
+//   console.log(`Occurrences of ${number}: ${hash[number] || 0}`);
+// }
+
+
+
+// ---find the occurance of number in array using (HASHING )------------
+// let arr =[1,3,2,1,3,12,1,12]
+// let Qarr= [1,4,2,3,12];
+
+
+// let hashArr = new Array(13).fill(0);
+
+
+// for (let i = 0 ; i<arr.length ; i++){
+//     hashArr[arr[i]]+=1; 
+// }
+
+// for (let i=0 ; i< Qarr.length ; i++){
+//    console.log( `the number you aasked for is  ${Qarr[i]} and it is present ${hashArr[Qarr[i]]} times in the array `)
+// }
+// console.log(hashArr)
