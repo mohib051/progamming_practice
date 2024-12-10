@@ -270,11 +270,11 @@
 
 
 // ---find the occurance of number in array using (HASHING )------------
-// let arr =[1,3,2,1,3,12,1,12]
-// let Qarr= [1,4,2,3,12];
+// let arr =[1,3,2,1,3,12,1,12,19999,334,19999]
+// let Qarr= [1,4,2,3,12,19999];
 
 
-// let hashArr = new Array(13).fill(0);
+// let hashArr = new Array(10000000).fill(0);
 
 
 // for (let i = 0 ; i<arr.length ; i++){
@@ -285,3 +285,20 @@
 //    console.log( `the number you aasked for is  ${Qarr[i]} and it is present ${hashArr[Qarr[i]]} times in the array `)
 // }
 // console.log(hashArr)
+
+
+//----------------------- Selection Sort -------------
+// let n =6 ;
+// let arr =[13,46,24,52,20,9]
+// for(let i =0; i<=arr.length-2 ; i++){
+//       let min=i ;
+//       for(let j=i ; j<=n-1 ; j++){
+//           if(arr[j] < arr[min])
+//             min = j 
+//       }
+//       let temp;
+//       temp = arr[min];
+//       arr[min]= arr[i];
+//       arr[i]=temp;
+// }
+// console.log(arr);
