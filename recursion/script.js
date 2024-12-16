@@ -120,7 +120,7 @@
 // let n =3;
 // function sum(n){
 //       if(n<1){
-//         // console.log(`sum of ${n} till 1 is ${s}`)
+//         console.log(`sum of ${n} till 1 is ${s}`)
 //         return 0 ;
 //       }
 //      return (n + sum(n-1));
@@ -302,7 +302,7 @@
 //       arr[i]=temp;
 // }
 // console.log(arr);
-
+ 
 
 //-----------------Bubble Sort--------------
 // let arr=[13,46,24,52,20,9]
