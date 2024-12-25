@@ -1,10 +1,8 @@
-tion print(i, n) {
-//   if (i<1) {
-//     return;
-//   }
-//   // console.log(i);
-//   print(i - 1, n);
-//   process.stdout.write(i + " ");
-  
-// }
-// print(4,4);
+
+function fibo(n){
+  if(n<=1) return n ;
+  let last = fibo(n-1);
+  let slast = fibo(n-2);
+  return last +slast ;
+}
+console.log(fibo(7));

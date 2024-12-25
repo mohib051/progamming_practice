@@ -318,3 +318,20 @@
 //   }
 // }
 // console.log(arr)
+
+// ---------Remove Duplicates from an array -----------
+// let arr =[1,1,2,2,2,2,3,3]
+// let i =0 ;
+// let newArr=[]
+// newArr.push(arr[0])
+// for(let j =1 ; j<arr.length ; j++){
+//       if(arr[j]!= arr[i]){
+//         arr[i+1] = arr[j]
+//         newArr.push(arr[j])
+//         i++;
+//       }
+// }
+// console.log(i+1);
+// console.log(arr)
+// console.log(newArr)
+
