@@ -149,3 +149,28 @@
 
 // let missingNum = sum-arrSum;
 // console.log(missingNum);
+
+// Q.10 --maximum consequetive ones in an array 
+
+
+// let arr = [1, 1, 0, 1, 1, 1];
+// let cnt = 0;
+// let storage = 0;
+// let n = arr.length;
+
+// for (let i = 0; i < n; i++) {
+//     if (arr[i] === 1) {
+//         cnt++;
+//     } else {
+//         if (cnt > storage) {
+//             storage = cnt;
+//         }
+//         cnt = 0; // Reset cnt to 0
+//     }
+// }
+// // Final check after loop ends
+// if (cnt > storage) {
+//     storage = cnt;
+// }
+// console.log(storage); 
+
