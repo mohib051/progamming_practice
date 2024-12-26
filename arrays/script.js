@@ -174,3 +174,54 @@
 // }
 // console.log(storage); 
 
+// Q.....Number that appear once---------
+// let arr = [2,2,1]
+// let n = arr.length ;
+// for(let i =0 ; i<n ; i++){
+//     let cnt =0 ;
+//     for(let j =0 ; j< n ; j++){
+//         if(arr[i] === arr[j]){
+//             cnt++;
+//         }
+//     }
+//     if(cnt===1){
+//         console.log(arr[i])
+//     }
+// }
+
+
+// Q. ---------Implementation of Array hashing technique,,----------
+
+// let inputarr = [1,3,2,1,3]
+// let queryarr= [1,4,2,3,12]
+
+// // pre-computation
+// let hasharr = new Array(4).fill(0)
+// for(let i =0 ; i< inputarr.length ; i++){
+//     hasharr[inputarr[i]] +=1 ;
+// }
+// // console.log(hasharr)
+// for(let i =0 ; i<queryarr.length ; i++){
+//     console.log("the no "+ queryarr[i]+" is present "+ hasharr[queryarr[i] ]+" times" )
+// }
+
+
+
+// -----------Q.Number that appear once, using hashing ----------
+
+
+// let arr = [2,2,1,1,3,3,4]
+// let n =arr.length;
+
+// let hash = new Array(5).fill(0)
+
+// for(let i=0 ; i<n ; i++){
+//         hash[arr[i]] +=1 ;
+// }
+// console.log(hash)
+
+// for(let i =0 ; i<hash.length ; i++){
+//         if(hash[i] === 1 ){
+//             console.log(i)
+//         }
+// }
